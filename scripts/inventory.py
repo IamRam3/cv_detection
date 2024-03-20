@@ -20,7 +20,7 @@ inventory_path = str(rospack.get_path('cv_detection')+'/config/inventory.json')
 
 class Inventory:
     running = False
-    def __init__(self,color="dark_green",image_topic="/bebop/image_raw", pub_topic="/cv_detection/color_range/detection"):
+    def __init__(self,color="dark_green",image_topic="/camera/color/image_raw", pub_topic="/cv_detection/color_range/detection"):
 
 
         rospy.init_node('alpha', anonymous=True)
